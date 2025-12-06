@@ -134,8 +134,8 @@ CREATE TABLE orders (
 CREATE TABLE t1 (
   ts1 TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,     -- default 0
   ts2 TIMESTAMP NULL ON UPDATE CURRENT_TIMESTAMP -- default NULL
-  CREATE TABLE t1 (ts TIMESTAMP NULL DEFAULT '0000-00-00 00:00:00');
 );
+CREATE TABLE t1 (ts TIMESTAMP NULL DEFAULT '0000-00-00 00:00:00');
 ```
 
 To set the TIMESTAMP column in either table to the current timestamp at insert time, explicitly assign it that value. For example:
