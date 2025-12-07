@@ -901,6 +901,10 @@ The WHERE clause is used to filter records based on a specific condition. It all
 SELECT column1, column2, ...
 FROM table_name
 WHERE condition;
+-------------------------------------------------
+SELECT emp_name, salary
+FROM employees
+WHERE salary = (SELECT MAX(salary) FROM employees);
 ```
 
 ### Example
